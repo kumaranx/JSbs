@@ -1,0 +1,23 @@
+{
+  "name": "jsbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumaranx/JSbs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumaranx/JSbs/issues"
+  },
+  "homepage": "https://github.com/kumaranx/JSbs#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

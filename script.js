@@ -72,5 +72,37 @@
 
 // console.log(-1 > 0 && 'hola')
 
-// --- Conditionals (if, else if, else)
+// // --- Conditionals (if, else if, else)
+
+// if (true){
+
+// }
+// else if (false){
+
+// }
+// else {
+
+// }
+
+// // --- Ternary Condition
+// const cond = 19 > 18 ? 'okay cool' : 'naah'
+// console.log(cond)
+
+// // --- Switch Statement
+
+// const value = 19
+
+// switch (value) {
+//   case 19:
+//     console.log("19 is cool")
+//     break
+//   case 18:
+//     console.log("18 is not cool")
+//     break
+//   default:
+//     console.log('okay')
+//     break;
+// }
+
+// --- Arrays
 

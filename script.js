@@ -104,5 +104,43 @@
 //     break;
 // }
 
-// --- Arrays
+// // --- Arrays
 
+// const arr = [1, 2, 3, 2, false]
+// const arr2 = new Array(5)
+// const arr3 = Array.from('hola')
+
+// arr3[4] = '!'
+// // console.log(arr3)
+
+// console.log(arr.unshift(10))
+// console.log(arr)
+
+// console.log(arr.indexOf(2))
+// console.log(arr.lastIndexOf(2))
+
+// console.log(arr.includes(3))
+
+// const arr4 = arr.concat(arr2)
+
+// console.log(arr4)
+
+// const str = arr.join('|')
+// console.log(str)
+
+// const arr5 = arr.slice(1, 3)
+// console.log(arr5)
+
+// const arr6 = arr.splice(1, 1)
+// console.log(arr6)
+
+// --- Array Destructing
+
+// const [x, x2, ...y] = [1, 2, 3, 4]  // ... is Spread Operator  
+// console.log(x, x2, y)
+
+const z = [2, 4, 5, 6]
+const k = [2, 4, 5, ...z]
+
+k.push('hola')
+console.log(z, k)

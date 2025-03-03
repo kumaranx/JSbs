@@ -240,3 +240,14 @@
 
 // const arr = Array.from(numberMap)
 // console.log(arr)
+
+// --- Error Handling
+
+try {
+  // riskyFunction();
+  throw new Error('knock knock')
+} catch (error) {
+  console.log("Oops an error:", error.message);
+} finally {
+  console.log('i dont give a fuck abt error.');  // Always runs
+}

@@ -222,3 +222,21 @@
 
 // const arr = [...mySet]
 // console.log(arr)
+
+// --- Maps
+
+// const myMap = new Map();
+// const numberMap = new Map([[4, 'four'], [10, 'ten']]);
+
+// myMap.set(11, 'eleven')
+// numberMap.delete(4)
+
+// console.log(myMap.size)
+// console.log(myMap.get(11))
+// console.log(myMap.has(11))
+
+// myMap.clear()
+// console.log(myMap)
+
+// const arr = Array.from(numberMap)
+// console.log(arr)

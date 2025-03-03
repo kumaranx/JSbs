@@ -294,14 +294,44 @@
 // const evenNum = numbers3.filter(num => num % 2 === 0);
 // console.log(evenNum)
 
-// --- 'this' keyword & scope
+// // --- 'this' keyword & scope
 
-const person = {
-  name: 'Bruce',
-  greet() {
-    console.log(`Hello, Mr ${this.name} Wayne`); // this does not work with arrow function here
-  },
-};
+// const person = {
+//   name: 'Bruce',
+//   greet() {
+//     console.log(`Hello, Mr ${this.name} Wayne`); // this does not work with arrow function here
+//   },
+// };
 
 
-person.greet()
+// person.greet()
+
+// --- Promises
+
+// const myPromise = new Promise((resolve, reject) => {
+//   if (false) {
+//     resolve('good');
+//   } else {
+//     reject('bad');
+//   }
+// });
+
+// myPromise.then((value) => {
+//   console.log(value)
+// }).catch((value) => {
+//   console.log(value)
+// }).finally(() => {
+//   console.log('always')
+// })
+
+const promise1 = Promise.resolve(3);
+const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 1000, 'hail'));
+const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 3000, 'hydra'));
+
+Promise.all([promise1, promise2, promise3])
+  .then((results) => {
+    console.log(results);
+  })
+  .catch((error) => {
+    console.log(error);
+  });

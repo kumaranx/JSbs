@@ -139,8 +139,35 @@
 // const [x, x2, ...y] = [1, 2, 3, 4]  // ... is Spread Operator  
 // console.log(x, x2, y)
 
-const z = [2, 4, 5, 6]
-const k = [2, 4, 5, ...z]
+// const z = [2, 4, 5, 6]
+// const k = [2, 4, 5, ...z]
 
-k.push('hola')
-console.log(z, k)
+// k.push('hola')
+// console.log(z, k)
+
+// // --- WHile loops / Do - While
+// do {
+//   console.log('do')   // code to be executed
+//   break
+// } while (true)        // condition (if true the loop will start over)
+
+// while (true) {
+//   console.log('while')
+//   break
+// }
+
+// // --- For Loops
+
+// for (let i = 0; i <= 7; i++) {
+//   console.log(i)
+// }
+
+const arr = [9, 3, 4]
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])
+// }
+
+for (let [i, value] of arr.entries()) {
+  console.log(i, value)
+}

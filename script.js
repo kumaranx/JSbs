@@ -175,16 +175,16 @@
 // --- Objects
 // Objects have properties associated with values - 'Key' 'Value' pairs
 
-const obj = {
-  name: 'Max',
-  age: 21,
-  sayHello: function () {
-    return 'hello'
-  },
-  career: {
+// const obj = {
+//   name: 'Max',
+//   age: 21,
+//   sayHello: function () {
+//     return 'hello'
+//   },
+//   career: {
 
-  }
-}
+//   }
+// }
 
 // obj.age = 20
 // obj.from = 'california'
@@ -198,13 +198,27 @@ const obj = {
 //   console.log(key)
 // }
 
-const obj2 = {
-  hairColor: 'redhead',
-  hobbies: ['surfing', 'skateboarding'],
-  name: 'Sadie'
-}
+// const obj2 = {
+//   hairColor: 'redhead',
+//   hobbies: ['surfing', 'skateboarding'],
+//   name: 'Sadie'
+// }
 
-const obj3 = { ...obj, ...obj2 }
-// console.log(obj3)
-const { hairColor, name } = obj3
-console.log(hairColor, name)
+// const obj3 = { ...obj, ...obj2 }
+// // console.log(obj3)
+// const { hairColor, name } = obj3
+// console.log(hairColor, name)
+
+// --- Sets
+
+// const mySet = new Set();
+// mySet.add(5)
+// mySet.add('Sarah')
+// mySet.delete(5)
+
+// console.log(mySet.size)
+// console.log(mySet.has(5))
+// console.log(mySet)
+
+// const arr = [...mySet]
+// console.log(arr)

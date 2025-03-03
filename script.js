@@ -162,12 +162,49 @@
 //   console.log(i)
 // }
 
-const arr = [9, 3, 4]
+// const arr = [9, 3, 4]
 
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i])
 // }
 
-for (let [i, value] of arr.entries()) {
-  console.log(i, value)
+// for (let [i, value] of arr.entries()) {
+//   console.log(i, value)
+// }
+
+// --- Objects
+// Objects have properties associated with values - 'Key' 'Value' pairs
+
+const obj = {
+  name: 'Max',
+  age: 21,
+  sayHello: function () {
+    return 'hello'
+  },
+  career: {
+
+  }
 }
+
+// obj.age = 20
+// obj.from = 'california'
+
+// console.log(obj['name'])
+// delete obj.career
+
+// console.log(Object.values(obj))
+
+// for (let key in obj) {      // use 'in' for objects and 'of' for arrays
+//   console.log(key)
+// }
+
+const obj2 = {
+  hairColor: 'redhead',
+  hobbies: ['surfing', 'skateboarding'],
+  name: 'Sadie'
+}
+
+const obj3 = { ...obj, ...obj2 }
+// console.log(obj3)
+const { hairColor, name } = obj3
+console.log(hairColor, name)

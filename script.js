@@ -241,13 +241,33 @@
 // const arr = Array.from(numberMap)
 // console.log(arr)
 
-// --- Error Handling
+// // --- Error Handling
 
-try {
-  // riskyFunction();
-  throw new Error('knock knock')
-} catch (error) {
-  console.log("Oops an error:", error.message);
-} finally {
-  console.log('i dont give a fuck abt error.');  // Always runs
+// try {
+//   // riskyFunction();
+//   throw new Error('knock knock')
+// } catch (error) {
+//   console.log("Oops an error:", error.message);
+// } finally {
+//   console.log('i dont give a fuck abt error.');  // Always runs
+// }
+
+// --- Functions
+
+// function greet(name, age = 20) {
+//   console.log(name)
+// }
+
+// const greet  = function(name) {
+
+// }
+
+// const greet = (name) => name + '!'
+
+// console.log(greet('sam'))
+
+function addNums(...numbers) {  // Rest Parameters
+  console.log(numbers)
 }
+
+addNums(1, 2, 34, 3, 3, 343)

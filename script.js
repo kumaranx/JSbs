@@ -266,8 +266,30 @@
 
 // console.log(greet('sam'))
 
-function addNums(...numbers) {  // Rest Parameters
-  console.log(numbers)
-}
+// function addNums(...numbers) {  // Rest Parameters
+//   console.log(numbers)
+// }
 
-addNums(1, 2, 34, 3, 3, 343)
+// addNums(1, 2, 34, 3, 3, 343)
+
+// --- Map, Filter & Reduce
+
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map((num) => num * 2);
+console.log(doubled)
+
+const users = [
+  { name: 'Letty', age: 24 },
+  { name: 'Paul', age: 22 }
+];
+
+const names = users.map((user) => user.name)
+console.log(names)
+
+const numbers2 = [1, 2, 3, 4];
+const sum = numbers2.reduce((acc, num) => acc + num, 0);
+console.log(sum);
+
+const numbers3 = [1, 2, 3, 4, 5];
+const evenNum = numbers3.filter(num => num % 2 === 0);
+console.log(evenNum)

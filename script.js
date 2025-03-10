@@ -324,14 +324,28 @@
 //   console.log('always')
 // })
 
-const promise1 = Promise.resolve(3);
-const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 1000, 'hail'));
-const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 3000, 'hydra'));
+// const promise1 = Promise.resolve(3);
+// const promise2 = new Promise((resolve, reject) => setTimeout(resolve, 1000, 'hail'));
+// const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 3000, 'hydra'));
 
-Promise.all([promise1, promise2, promise3])
-  .then((results) => {
-    console.log(results);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// Promise.all([promise1, promise2, promise3])
+//   .then((results) => {
+//     console.log(results);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// --- Arrow Functions (WDS)
+
+function sum(a, b) {
+  return a + b
+}
+
+let sum2 = (a, b) => a + b
+
+let isPositive = (number) => number >= 0
+
+let randomNumber = () => Math.random
+
+document.addEventListener('click', () => console.log('Click'))
